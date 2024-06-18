@@ -1,0 +1,2 @@
+docker rm -f gsy_cloud_com
+docker run -it --name gsy_cloud_com -e ECCI_PUB_TARGETS="{'edge': 'gpu1cFLZYBr7TWFeheK3WKi1'}" -e ECCI_CONTAINER_TYPE=cloud -e ECCI_APP_CONTROLLER_CONTAINER="{'edge': 'gpu1cFLZYBr7TWFeheK3WKi1'}" -e ECCI_APP_ID=gpu1u4FB8iFRbrrFu7YX9hh1 -e ECCI_CONTAINER_NAME=cloud -e ECCI_LOCAL_CONTAINERS="['edgeai_gpu1u4FB8iFRbrrFu7YX9hh1_cloud']" -e ECCI_LOCAL_BROKER_IP=192.168.0.26 -e ECCI_LOCAL_BROKER_PORT=21001 -e ECCI_LOCAL_BROKER_ID=gpu1cFLZYBr7TWFeheK3WKi1 -e ECCI_AGENT_ID=gsy_agent -e ECCI_APP_TYPE=component -e ECCI_AGENT_IP=123.12.3.41 com_cloud:v1
